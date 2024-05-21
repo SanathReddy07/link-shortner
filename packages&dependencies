@@ -1,0 +1,20 @@
+//intialize the project
+mkdir url-shortener
+cd url-shortener
+npm init -y
+//install required dependencies
+npm install express mongoose shortid valid-url dotenv
+//Project Directory Structure
+url-shortener/
+├── models/
+│   └── Url.js
+├── routes/
+│   └── index.js
+├── .env
+├── server.js
+└── package.json
+//Environment Variables
+//Create a .env file in the root directory
+MONGO_URI=your_mongodb_connection_string
+BASE_URL=http://localhost:5000
+PORT=5000
